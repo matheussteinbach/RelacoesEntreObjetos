@@ -1,23 +1,23 @@
-class Editora:
-    def __init__(self, codigo: int, nome: str):
-        if isinstance(codigo, int) and isinstance(nome, str):
-            self.__codigo = codigo
-            self.__nome = nome
+class Capitulo:
+    def __init__(self, numero: int, titulo: str):
+        if isinstance(numero, int) and isinstance(titulo, str):
+            self.__numero = numero
+            self.__titulo = titulo
 
     @property
-    def codigo(self):
-        return self.__codigo
+    def numero(self):
+        return self.__numero
 
-    @codigo.setter
-    def codigo(self, codigo):
-        if isinstance(codigo, int):
-            self.__codigo = codigo
+    @numero.setter
+    def numero(self, numero):
+        if isinstance(numero, int):
+            self.__numero = numero
 
     @property
-    def nome(self):
-        return self.__nome
+    def titulo(self):
+        return self.__titulo
 
-    @nome.setter
-    def nome(self, nome):
-        if isinstance(nome, str):
-            self.__nome = nome
+    @titulo.setter
+    def titulo(self, titulo):
+        if isinstance(titulo, str):
+            self.__titulo = titulo
