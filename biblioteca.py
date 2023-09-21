@@ -10,6 +10,8 @@ class Biblioteca:
         return self.__livros
 
     def incluir_livro(self, livro: Livro):
+        # Nao esqueca de garantir que o objeto recebido pertence a classe Livro...
+        # Nao permitir insercao de Livros duplicados!
         if isinstance(livro, Livro) and livro not in self.livros:
             self.__livros.append(livro)
 
